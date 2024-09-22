@@ -6,6 +6,7 @@ import hello_pb2_grpc
 import sqlite3
 import sys
 
+
 sys.stdout = os.fdopen(sys.stdout.fileno(), 'w', buffering=1)
 class Greeter(hello_pb2_grpc.GreeterServicer):
     def __init__(self):
